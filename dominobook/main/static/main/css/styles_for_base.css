@@ -1,3 +1,163 @@
-body {
-    background-color: #0d98ba;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.obertka {
+    background-color: #fff;
+    width: 100%
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+header{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    top: 0;
+    height: 55px;
+    z-index: 100;
+    color: black;
+}
+
+header .logo {
+    font-size: 22px;
+}
+
+header nav{
+float: right;
+width: 65%;
+}
+
+header nav ul:not(.contact) {
+margin-top: 10px;
+margin-right: 460px;
+list-style: none;
+display: flex;
+justify-content: space-between;
+z-index: 2;
+position: relative;
+font-size: 20px;
+}
+
+header .contact a{
+    color: rgba(98, 98, 98, 0.977);
+    list-style: none;
+}
+
+header nav ul li {
+display: inline-block;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+header img{
+    /*лого в процессе*/
+}
+
+header nav ul li:not(.btn) a:hover {
+    border-bottom: 5px solid #000;;
+}
+
+
+.hero {
+    margin: 30px 25px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.hero-inf{
+    max-width: 50%;
+}
+
+.hero h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 95px;
+}
+
+.hero p{
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 40px;
+}
+
+.hero img{
+    max-width: 40%; /* Ограничивает ширину изображения */
+    margin-right: 15px;
+
+}
+
+
+.btn{
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #000;
+    margin-top: 40px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.btn:hover {
+    -webkit-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+}
+
+.why h2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 25px;
+    font-size: 80px;
+}
+
+.why img{
+    margin-top: 35px;
 }

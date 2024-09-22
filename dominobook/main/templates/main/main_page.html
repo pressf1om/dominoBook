@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino Books</title>
+<link rel="stylesheet" href="{% static 'main/css/styles_for_main_page.css' %}">
+{% endblock %}
+
+
+{% block body %}
+    <div class="obertka"></div>
+        <header class="container">
+            <img src="{% static 'main/img/logo.svg' width="1.5%" class="logo-img%}">
+            <span class="logo">Domino Books</span>
+            <nav>
+                <ul>
+                    <li><a href="#sec1">Асортимент</a></li>
+                    <li><a href="#sec2">О нас</a></li>
+                    <li><a href="#sec3">Подарки</a></li>
+                    <div class="contact">
+                        <a href="#">VK |</a>
+                        <a href="#"> IG |</a>
+                        <a href="#">YT</a>
+                    </div>
+                </ul>
+                
+            </nav>
+        </header>
+        <br>
+        <hr>
+    
+
+        <div class="hero container">
+            <div class="hero-inf">
+                <h1>Книжный магазин <br> "Domino Books"</h1>
+                <p>Запусти книжный эффект домино в свою жизнь!</p>
+                <button class="btn">Толкнуть</button>
+            </div>
+            <img src="img/hero-img.png" alt="hero-img" width="40%">
+        </div>
+        <div class="why container">
+            <h2>Почему мы</h2>
+            <img src="img/why.jpg" alt="">
+        </div>
+    <h1>еще 2-3 блока и футор</h1>
+{% endblock %}
