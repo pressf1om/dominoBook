@@ -12,7 +12,7 @@
 {% block body %}
     <div class="obertka"></div>
         <header class="container">
-            <img src="{% static 'main/img/logo.svg' width="1.5%" class="logo-img%}">
+            <img src="{% static 'main/img/logo.svg' %}" class="logo-img" > 
             <span class="logo">Domino Books</span>
             <nav>
                 <ul>
@@ -38,11 +38,11 @@
                 <p>Запусти книжный эффект домино в свою жизнь!</p>
                 <button class="btn">Толкнуть</button>
             </div>
-            <img src="img/hero-img.png" alt="hero-img" width="40%">
+            <img src="{% static 'main/img/hero-img.png' %}" alt="hero-img" width="40%">
         </div>
         <div class="why container">
             <h2>Почему мы</h2>
-            <img src="img/why.jpg" alt="">
+            <img src="{% static 'main/img/why.jpg' %}" alt="">
         </div>
     <h1>еще 2-3 блока и футор</h1>
 {% endblock %}
