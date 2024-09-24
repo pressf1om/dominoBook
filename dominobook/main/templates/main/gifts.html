@@ -12,48 +12,66 @@
 <div class="available"> Подарочные карты — отличный выбор, когда не хочешь идти в гости с пустыми руками! Карты разных номиналов можно найти в розничных магазинах по всему миру.</div>
 
 
-<section class="card-container">
-    <section class="card">
-        <img src="https://via.placeholder.com/300">
-        <h2> Электронное домино </h2>
-        <h1> Вы можете подарить электронную доминошку другу или члену семьи. </h1>
-        <p> Примечание: для отправки электронных подарочных доминошек нужен адрес электронной почты.</p>
-        <p> Минимальная доминошка — 500 рублей, максимальная — 3000 рублей. </p>
+ <section class="card-container">
 
-        <button>Отправить подарочную доминошку </button>
-    </section>
+        <section class="card">
+            <img src="https://via.placeholder.com/300">
+            <h2> Маленькая доминошка </h2>
+            <p> Можно оформить в ближайшем магазине. </p>
+            <p>Маленькая доминошка — 500 рублей.</p>
+            <button>Ближайший магазин</button>
+        </section>
 
-    <section class="card">
-        <img src="https://via.placeholder.com/300">
-        <h2> Маленькая доминошка </h2>
-        <p> Можно оформить в ближайшем магазине. </p>
-        <p>Маленькая доминошка — 500 рублей.</p>
-        <button>Ближайший магазин</button>
-    </section>
+        <section class="card">
+            <img src="https://via.placeholder.com/300">
+            <h2>Домино</h2>
+            <p> Можно оформить в ближайшем магазине. </p>
+            <p>Домино — 1000 рублей.</p>
+            <button>Ближайший магазин</button>
+        </section>
 
-    <section class="card">
-        <img src="https://via.placeholder.com/300">
-        <h2>Домино</h2>
-        <p> Можно оформить в ближайшем магазине. </p>
-        <p>Домино — 1000 рублей.</p>
-        <button>Ближайший магазин</button>
-    </section>
+        <section class="card">
+            <img src="https://via.placeholder.com/300">
+            <h2>Большое домино</h2>
+            <p> Можно оформить в ближайшем магазине. </p>
+            <p>Большое домино — 2500 рублей.</p>
+            <button>Ближайший магазин</button>
+        </section>
 
-    <section class="card">
-        <img src="https://via.placeholder.com/300">
-        <h2>Большое домино</h2>
-        <p> Можно оформить в ближайшем магазине. </p>
-        <p>Большое домино — 2500 рублей.</p>
-        <button>Ближайший магазин</button>
-    </section>
+        <section class="card">
+            <img src="https://via.placeholder.com/300">
+            <h2>О-го-го, какое домино</h2>
+            <p> Можно оформить в ближайшем магазине. </p>
+            <p>Ты очень щедрый, если можешь подарить "О-го-го, какое домино" — 1000 рублей.</p>
+            <button>Ближайший магазин</button>
+        </section>
+ </section>
 
-    <section class="card">
-        <img src="https://via.placeholder.com/300">
-        <h2>О-го-го, какое домино</h2>
-        <p> Можно оформить в ближайшем магазине. </p>
-        <p>Ты очень щедрый, если можешь подарить "О-го-го, какое домино" — 1000 рублей.</p>
-        <button>Ближайший магазин</button>
-    </section>
 
-</section>
+
+            <form action="" method="get">
+                <label>
+                    Имя отправителя:
+                    <input type="text" name="name" placeholder="Иван">
+                </label>
+
+                <label>
+                    Имя получателя:
+                    <input type="text" name="name" placeholder="Иван">
+                </label>
+
+                <label>
+                    Электронная почта получателя:
+                    <input type="email" name="email" placeholder="example@gmail.com">
+                </label>
+                <label>
+                    Написать сумму:
+                    <input type="text" name="number" placeholder="От 500 до 3000 руб">
+                </label>
+                <button type="submit" class="btn_buy">
+                    Отправить
+                </button>
+            </form>
+
+
 {% endblock %}

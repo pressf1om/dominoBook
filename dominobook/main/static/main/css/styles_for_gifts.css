@@ -1,14 +1,21 @@
+* {
+    outline: 4px solid green !important;
+}
+
 body {
-    background-color: #eae7dc;
+    background-color: #ffffff;
     margin: 0;
 }
 
 .title {
     text-align: center;
     font-size: 40px;
-    font-weight: bolder;
     color: #000000;
     margin-top: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .available {
@@ -17,19 +24,23 @@ body {
     font-size: 16px;
     color: #8e8d8a;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.card-container {
+.card-container, form {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     margin: 0px auto;
     justify-content: center;
+    max-width: 100%;
+    overflow-x: visible;
+    position: relative;
+    padding: 30px;
 }
 
-section.card {
+section.card, form {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
@@ -38,7 +49,7 @@ section.card {
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
-    align-items: center; /* По центру по горизонтали */
+    align-items: center;
 
 }
 
@@ -62,41 +73,35 @@ section.card:hover {
     color: #555;
 }
 
-.card button {
-    padding: 15px 40px;
-    border-radius: 10px;
-    transition: .2s linear;
-    background: #000;
-    margin-top: 10px;
-    font-size: 15px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.card button, .btn_buy {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 
 }
 
-.card button:hover {
-    -webkit-transform: rotateZ(5deg);
-    -ms-transform: rotateZ(5deg);
-    transform: rotateZ(5deg);
+.card button:hover, .btn_buy:hover {
+    background-color: #424242;
 }
 
-@media screen and (max-width: 800px)
-{
-    .card img {
-        max-width: 300px;
-    }
+ /*Форма обратной связи*/
 
-
-    section.card {
-        flex-direction: column;
-        display: flex;
-        margin: 40px auto;
-        align-items: center;
-        width: 300px;
-    }
+form {
+    margin: 20px auto 40px auto;
+    padding: 20px 15px 40px 30px;
 }
+
+
+label, input, textarea, button, select{
+    font-size: 1.3rem;
+    line-height: 1.2
+}
+
+
 
 @media screen and (max-width: 930px)
 {
