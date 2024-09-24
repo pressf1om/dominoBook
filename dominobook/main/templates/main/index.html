@@ -12,8 +12,7 @@
 {% block body %}
     <div class="obertka"></div>
         <header class="container">
-            <img src="{% static 'main/img/logo.svg' %}" class="logo-img" > 
-            <span class="logo">Domino Books</span>
+            <img src="{% static 'main/img/logo2.png' %}" class="logo-img" >
             <nav>
                 <ul>
                     <li><a href="#sec1">Асортимент</a></li>
@@ -44,5 +43,185 @@
             <h2>Почему мы</h2>
             <img src="{% static 'main/img/why.jpg' %}" alt="">
         </div>
-    <h1>еще 2-3 блока и футор</h1>
+        <div class="bestseller">
+            <h2>Бестселлеры</h2>
+            <div class="product-container">
+                <br>
+                <div class="product-card">
+                    <img src="{% static 'main/img/ремарк.png' %}" alt="Product 1" class="product-image">
+                    <h3 class="product-title">Триумфальная арка</h3>
+                    <p class="product-description"> Роман, Военная проза, Исторический жанр</p>
+                    <p class="product-price">$5.99</p>
+                    <button class="add-to-cart">Купить</button>
+                </div>
+        
+                <div class="product-card">
+                    <img src="{% static 'main/img/арист.png' %}" alt="Product 2" class="product-image">
+                    <h3 class="product-title">Этика</h3>
+                    <p class="product-description"> Философские науки. Социология</p>
+                    <p class="product-price">$3.50</p>
+                    <button class="add-to-cart">Купить</button>
+                </div>
+        
+                <div class="product-card">
+                    <img src="{% static 'main/img/дост.png' %}" alt="Product 3" class="product-image">
+                    <h3 class="product-title">Преступление и наказание</h3>
+                    <p class="product-description">Психологический реализм, Философская художественная литература</p>
+                    <p class="product-price">$9.99</p>
+                    <button class="add-to-cart">Купить</button>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="recomendation">
+            <h2>Набирающее</h2>
+            <h2 class="two">популярность</h2>
+
+            <div class="rec-container">
+                <div class="rec-card">
+                    <img src="{% static 'main/img/rec1.jpg' %}" alt="Product 1" class="rec-image">
+                    <h3 class="rec-title">Сознательная  проза</h3>
+                    <p class="rec-description">Избранные эссе 1952-1995</p>
+                    <p class="rec-price">$7.99</p>
+                    <button class="add-to-cart">Купить</button>
+                </div>
+
+                <div class="rec-card">
+                    <img src="{% static 'main/img/rec2.jpg' %}" alt="Product 2" class="rec-image">
+                    <h3 class="rec-title">За фасадом</h3>
+                    <p class="rec-description">25 писем о Петербурге и его житилях</p>
+                    <p class="rec-price">$15.99</p>
+                    <button class="add-to-cart">Купить</button>
+                </div>
+
+                <div class="rec-card">
+                    <img src="{% static 'main/img/rec3.jpg' %}" alt="Product 3" class="rec-image">
+                    <h3 class="rec-title">Эстетический интелект</h3>
+                    <p class="rec-description">Как его развивать и использовать</p>
+                    <p class="rec-price">$9.99</p>
+                    <button class="add-to-cart">Купить</button>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="baze">
+            <h1>Основные направления</h1>
+            <div class="ellipse-container">
+                <div class="ellipse ellipse-large teal">
+                    <p>Классическая и современная<br>художественная проза</p>
+                </div>
+                <div class="ellipse ellipse-small green">
+                    <p>Социальные науки и психология</p>
+                </div>
+                <div class="ellipse ellipse-medium peach">
+                    <p>Философия и история</p>
+                </div>
+                <div class="ellipse ellipse-large pink">
+                    <p>Литературоведение<br>и теория театра<br>и кино</p>
+                </div>
+                <div class="ellipse ellipse-medium grey">
+                    <p>Альбомы по искусству, книги и журналы</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="conteiner shop">
+            <a href="#" class="see-all">See All</a>
+            <h2>Полка</h2>
+            <div class="weapon">
+                <div class="block">
+                    <img src="{% static 'main/img/shecspir.png' %}" alt="">
+                    <span>Гамлет <br> 2.99$ </span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/princ.png' %}" alt="">
+                    <span>Маленький принц <br> 4.99$</span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/miamoto.png' %}" alt="">
+                    <span>Книга 5 колец <br> 3.99$</span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/catch.png' %}" alt="" class="444">
+                    <span>Над пропостью во ржи <br> 4.99$</span>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner shop">
+            <div class="weapon">
+                <div class="block">
+                    <img src="{% static 'main/img/usupov.png' %}" alt="">
+                    <span>Мемуары Феликса Юсупова <br> 5.99$ </span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/green light.png' %}" alt="">
+                    <span>Зеленый свет <br> 4.99$</span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/gomer.png' %}" alt="">
+                    <span>Гомер <br> 6.99$</span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/witcher.png' %}" alt="" class="444">
+                    <span>Ведьмак <br> 4.99$</span>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner shop">
+            <a href="#" class="see-all">See All</a>
+            <h2>О жизни</h2>
+            <div class="weapon">
+                <div class="block">
+                    <img src="{% static 'main/img/camu.png' %}" alt="">
+                    <span>Посторонний <br> 2.99$ </span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/cat.png' %}" alt="">
+                    <span>Слуга кот <br> 4.99$</span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/fight club.png' %}" alt="">
+                    <span>Бойцовский клуб <br> 3.99$</span>
+                </div>
+                <div class="block">
+                    <img src="{% static 'main/img/getsbi.png' %}" alt="" class="444">
+                    <span>Великий Гэтсби <br> 2.99$</span>
+                </div>
+            </div>
+        </div>
+        <div class="obertka-k">
+            <div class="kontakt">
+                <h3>Contacts</h3>
+                <br>
+                <ul>
+                    <li><a href="#">DominoB@gmail.ru</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter(X)</a></li>
+                    <li><a href="#">+8 880 555 35 35</a></li>
+                </ul>
+            </div>
+        </div>
+                <div class = "form-zvonok" > 
+                    <div>
+                        <h3> Обратная связь</h3>
+                        <input type ='email' name = 'username' required placeholder="E-mail">
+                        <br>
+                        <input type='text' name='usernumber' required placeholder="Сообщение">
+                        <br>
+                        <button>Отправить</button>  
+                    </div>
+                    
+                    <hr>
+                    <br>
+                    <p>© 2024 Domino Books Company. All rights reserved.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
 {% endblock %}
