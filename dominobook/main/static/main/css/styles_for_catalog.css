@@ -79,22 +79,16 @@ section.card:hover {
     background-color: #424242;
 }
 
-@media screen and (max-width: 930px)
-{
-    .card img {
-        max-width: 300px;
-    }
-
+@media screen and (max-width: 930px) {
 
     section.card {
         flex-direction: column;
         display: flex;
-        margin: 40px auto;
         align-items: center;
-        width: 300px;
+        width: 35%;
     }
 
-    .title {
-        margin-left: 20%;
+    .card img {
+        max-width: 100%;
     }
 }
