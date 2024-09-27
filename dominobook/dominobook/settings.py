@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'feedback.apps.FeedbackConfig',
     'users',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dominodb',
         'USER': 'admin',
-        'PASSWORD': 'mypassword',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
         'PORT': '5432',
     }
