@@ -2,177 +2,178 @@
 
 {% load static %}
 
-{% block head %}<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domino Books</title>
+{% block head %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domino Books</title>
 <link rel="stylesheet" href="{% static 'main/css/styles_for_main_page.css' %}">
 {% endblock %}
 
 
-{% block body %}
-    <div class="obertka">
-        <div class="hero container">
-            <div class="hero-inf">
-                <h1>Книжный магазин <br> "Domino Books"</h1>
-                <p>Запусти книжный эффект домино в свою жизнь!</p>
-                <button class="btn">Толкнуть</button>
-            </div>
-            <img src="{% static 'main/img/hero-img.png' %}" alt="hero-img" width="40%">
+{% block content %}
+<div class="obertka">
+    <div class="hero container">
+        <div class="hero-inf">
+            <h1>Книжный магазин <br> "Domino Books"</h1>
+            <p>Запусти книжный эффект домино в свою жизнь!</p>
+            <button class="btn">Толкнуть</button>
         </div>
-        <div class="why container">
-            <h2>Почему мы</h2>
-            <img src="{% static 'main/img/why.jpg' %}" alt="">
-        </div>
-        <div class="bestseller">
-            <h2>Бестселлеры</h2>
-            <div class="product-container">
-                <br>
-                <div class="product-card">
-                    <img src="{% static 'main/img/ремарк.png' %}" alt="Product 1" class="product-image">
-                    <h3 class="product-title">Триумфальная арка</h3>
-                    <p class="product-description"> Роман, Военная проза, Исторический жанр</p>
-                    <p class="product-price">$5.99</p>
-                    <button class="add-to-cart">Купить</button>
-                </div>
-        
-                <div class="product-card">
-                    <img src="{% static 'main/img/арист.png' %}" alt="Product 2" class="product-image">
-                    <h3 class="product-title">Этика</h3>
-                    <p class="product-description"> Философские науки. Социология</p>
-                    <p class="product-price">$3.50</p>
-                    <button class="add-to-cart">Купить</button>
-                </div>
-        
-                <div class="product-card">
-                    <img src="{% static 'main/img/дост.png' %}" alt="Product 3" class="product-image">
-                    <h3 class="product-title">Преступление и наказание</h3>
-                    <p class="product-description">Психологический реализм, Философская художественная литература</p>
-                    <p class="product-price">$9.99</p>
-                    <button class="add-to-cart">Купить</button>
-                </div>
+        <img src="{% static 'main/img/hero-img.png' %}" alt="hero-img" width="40%">
+    </div>
+    <div class="why container">
+        <h2>Почему мы</h2>
+        <img src="{% static 'main/img/why.jpg' %}" alt="">
+    </div>
+    <div class="bestseller">
+        <h2>Бестселлеры</h2>
+        <div class="product-container">
+            <br>
+            <div class="product-card">
+                <img src="{% static 'main/img/ремарк.png' %}" alt="Product 1" class="product-image">
+                <h3 class="product-title">Триумфальная арка</h3>
+                <p class="product-description"> Роман, Военная проза, Исторический жанр</p>
+                <p class="product-price">$5.99</p>
+                <button class="add-to-cart">Купить</button>
             </div>
-        </div> 
 
-
-        <div class="recomendation">
-            <h2>Набирающее</h2>
-            <h2 class="two">популярность</h2>
-
-            <div class="rec-container">
-                <div class="rec-card">
-                    <img src="{% static 'main/img/rec1.jpg' %}" alt="Product 1" class="rec-image">
-                    <h3 class="rec-title">Сознательная  проза</h3>
-                    <p class="rec-description">Избранные эссе 1952-1995</p>
-                    <p class="rec-price">$7.99</p>
-                    <button class="add-to-cart">Купить</button>
-                </div>
-
-                <div class="rec-card">
-                    <img src="{% static 'main/img/rec2.jpg' %}" alt="Product 2" class="rec-image">
-                    <h3 class="rec-title">За фасадом</h3>
-                    <p class="rec-description">25 писем о Петербурге и его житилях</p>
-                    <p class="rec-price">$15.99</p>
-                    <button class="add-to-cart">Купить</button>
-                </div>
-
-                <div class="rec-card">
-                    <img src="{% static 'main/img/rec3.jpg' %}" alt="Product 3" class="rec-image">
-                    <h3 class="rec-title">Эстетический интелект</h3>
-                    <p class="rec-description">Как его развивать и использовать</p>
-                    <p class="rec-price">$9.99</p>
-                    <button class="add-to-cart">Купить</button>
-                </div>
+            <div class="product-card">
+                <img src="{% static 'main/img/арист.png' %}" alt="Product 2" class="product-image">
+                <h3 class="product-title">Этика</h3>
+                <p class="product-description"> Философские науки. Социология</p>
+                <p class="product-price">$3.50</p>
+                <button class="add-to-cart">Купить</button>
             </div>
-        </div> 
 
-
-        <div class="baze">
-            <h1>Основные направления</h1>
-            <div class="ellipse-container">
-                <div class="ellipse ellipse-large teal">
-                    <p>Классическая и современная<br>художественная проза</p>
-                </div>
-                <div class="ellipse ellipse-small green">
-                    <p>Социальные науки и психология</p>
-                </div>
-                <div class="ellipse ellipse-medium peach">
-                    <p>Философия и история</p>
-                </div>
-                <div class="ellipse ellipse-large pink">
-                    <p>Литературоведение<br>и теория театра<br>и кино</p>
-                </div>
-                <div class="ellipse ellipse-medium grey">
-                    <p>Альбомы по искусству, книги и журналы</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="conteiner shop">
-            <a href="#" class="see-all">See All</a>
-            <h2>Полка</h2>
-            <div class="weapon">
-                <div class="block">
-                    <img src="{% static 'main/img/shecspir.png' %}" alt="">
-                    <span>Гамлет <br> 2.99$ </span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/princ.png' %}" alt="">
-                    <span>Маленький принц <br> 4.99$</span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/miamoto.png' %}" alt="">
-                    <span>Книга 5 колец <br> 3.99$</span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/catch.png' %}" alt="" class="444">
-                    <span>Над пропостью во ржи <br> 4.99$</span>
-                </div>
-            </div>
-        </div>
-        <div class="conteiner shop">
-            <div class="weapon">
-                <div class="block">
-                    <img src="{% static 'main/img/usupov.png' %}" alt="">
-                    <span>Мемуары Феликса Юсупова <br> 5.99$ </span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/green light.png' %}" alt="">
-                    <span>Зеленый свет <br> 4.99$</span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/gomer.png' %}" alt="">
-                    <span>Гомер <br> 6.99$</span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/witcher.png' %}" alt="" class="444">
-                    <span>Ведьмак <br> 4.99$</span>
-                </div>
-            </div>
-        </div>
-        <div class="conteiner shop">
-            <a href="#" class="see-all">See All</a>
-            <h2>О жизни</h2>
-            <div class="weapon">
-                <div class="block">
-                    <img src="{% static 'main/img/camu.png' %}" alt="">
-                    <span>Посторонний <br> 2.99$ </span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/cat.png' %}" alt="">
-                    <span>Слуга кот <br> 4.99$</span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/fight club.png' %}" alt="">
-                    <span>Бойцовский клуб <br> 3.99$</span>
-                </div>
-                <div class="block">
-                    <img src="{% static 'main/img/getsbi.png' %}" alt="" class="444">
-                    <span>Великий Гэтсби <br> 2.99$</span>
-                </div>
+            <div class="product-card">
+                <img src="{% static 'main/img/дост.png' %}" alt="Product 3" class="product-image">
+                <h3 class="product-title">Преступление и наказание</h3>
+                <p class="product-description">Психологический реализм, Философская художественная литература</p>
+                <p class="product-price">$9.99</p>
+                <button class="add-to-cart">Купить</button>
             </div>
         </div>
     </div>
-    
-    
+
+
+    <div class="recomendation">
+        <h2>Набирающее</h2>
+        <h2 class="two">популярность</h2>
+
+        <div class="rec-container">
+            <div class="rec-card">
+                <img src="{% static 'main/img/rec1.jpg' %}" alt="Product 1" class="rec-image">
+                <h3 class="rec-title">Сознательная проза</h3>
+                <p class="rec-description">Избранные эссе 1952-1995</p>
+                <p class="rec-price">$7.99</p>
+                <button class="add-to-cart">Купить</button>
+            </div>
+
+            <div class="rec-card">
+                <img src="{% static 'main/img/rec2.jpg' %}" alt="Product 2" class="rec-image">
+                <h3 class="rec-title">За фасадом</h3>
+                <p class="rec-description">25 писем о Петербурге и его житилях</p>
+                <p class="rec-price">$15.99</p>
+                <button class="add-to-cart">Купить</button>
+            </div>
+
+            <div class="rec-card">
+                <img src="{% static 'main/img/rec3.jpg' %}" alt="Product 3" class="rec-image">
+                <h3 class="rec-title">Эстетический интелект</h3>
+                <p class="rec-description">Как его развивать и использовать</p>
+                <p class="rec-price">$9.99</p>
+                <button class="add-to-cart">Купить</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="baze">
+        <h1>Основные направления</h1>
+        <div class="ellipse-container">
+            <div class="ellipse ellipse-large teal">
+                <p>Классическая и современная<br>художественная проза</p>
+            </div>
+            <div class="ellipse ellipse-small green">
+                <p>Социальные науки и психология</p>
+            </div>
+            <div class="ellipse ellipse-medium peach">
+                <p>Философия и история</p>
+            </div>
+            <div class="ellipse ellipse-large pink">
+                <p>Литературоведение<br>и теория театра<br>и кино</p>
+            </div>
+            <div class="ellipse ellipse-medium grey">
+                <p>Альбомы по искусству, книги и журналы</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="conteiner shop">
+        <a href="#" class="see-all">See All</a>
+        <h2>Полка</h2>
+        <div class="weapon">
+            <div class="block">
+                <img src="{% static 'main/img/shecspir.png' %}" alt="">
+                <span>Гамлет <br> 2.99$ </span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/princ.png' %}" alt="">
+                <span>Маленький принц <br> 4.99$</span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/miamoto.png' %}" alt="">
+                <span>Книга 5 колец <br> 3.99$</span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/catch.png' %}" alt="" class="444">
+                <span>Над пропостью во ржи <br> 4.99$</span>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner shop">
+        <div class="weapon">
+            <div class="block">
+                <img src="{% static 'main/img/usupov.png' %}" alt="">
+                <span>Мемуары Феликса Юсупова <br> 5.99$ </span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/green light.png' %}" alt="">
+                <span>Зеленый свет <br> 4.99$</span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/gomer.png' %}" alt="">
+                <span>Гомер <br> 6.99$</span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/witcher.png' %}" alt="" class="444">
+                <span>Ведьмак <br> 4.99$</span>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner shop">
+        <a href="#" class="see-all">See All</a>
+        <h2>О жизни</h2>
+        <div class="weapon">
+            <div class="block">
+                <img src="{% static 'main/img/camu.png' %}" alt="">
+                <span>Посторонний <br> 2.99$ </span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/cat.png' %}" alt="">
+                <span>Слуга кот <br> 4.99$</span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/fight club.png' %}" alt="">
+                <span>Бойцовский клуб <br> 3.99$</span>
+            </div>
+            <div class="block">
+                <img src="{% static 'main/img/getsbi.png' %}" alt="" class="444">
+                <span>Великий Гэтсби <br> 2.99$</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}

@@ -2,23 +2,23 @@
 {% load static %}
 
 {% block head %}
-    <link rel="stylesheet" href="{% static 'cart/css/cart' %}">
+<link rel="stylesheet" href="{% static 'cart/css/cart' %}">
 {% endblock %}
 
-{% block body %}
+{% block content %}
 <h2>Ваша корзина</h2>
 {% if cart.items.all %}
-    <ul>
-        {% for item in cart.items.all %}
-            <li>
-                {{ item.book.title }} ({{ item.quantity }})
-                <a href="{% url 'cart:remove_from_cart' item.book.id %}">Удалить</a>
-            </li>
-        {% endfor %}
-    </ul>
-    <p>Общая стоимость: {{ cart.get_total_price }}</p>
+<ul>
+    {% for item in cart.items.all %}
+    <li>
+        {{ item.book.title }} ({{ item.quantity }})
+        <a href="{% url 'cart:remove_from_cart' item.book.id %}">Удалить</a>
+    </li>
+    {% endfor %}
+</ul>
+<p>Общая стоимость: {{ cart.get_total_price }}</p>
 {% else %}
-    <p>Ваша корзина пуста.</p>
+<p>Ваша корзина пуста.</p>
 {% endif %}
 {% endblock %}
 

@@ -66,7 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'feedback.context_processors.feedback_form',  # добавлен контекстный процеесор чтобы форма была доступна везде
+                'feedback.context_processors.feedback_form',
             ],
         },
     },

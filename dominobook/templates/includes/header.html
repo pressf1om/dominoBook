@@ -1,0 +1,19 @@
+{% load static %}
+<header class="container">
+    <img src="{% static 'main/img/logo2.png' %}" class="logo-img">
+    <nav>
+        <ul>
+            <li><a href="{% url 'main:catalog' %}">Асортимент</a></li>
+            <li><a href="{% url 'main:about' %}">О нас</a></li>
+            <li><a href="{% url 'main:gifts' %}">Подарки</a></li>
+            <div class="contact">
+                <a href="#">VK |</a>
+                <a href="#"> IG |</a>
+                <a href="#">YT</a>
+            </div>
+        </ul>
+
+    </nav>
+</header>
+<br>
+<hr>
