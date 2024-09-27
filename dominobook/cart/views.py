@@ -22,6 +22,7 @@ def add_to_cart(request, book_id):
 
     return redirect('cart:cart')
 
+
 @login_required
 def remove_from_cart(request, book_id):
     cart = Cart.objects.get(user=request.user)
