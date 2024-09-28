@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 100px;
+
 }
 
 .hero-inf{
@@ -18,13 +18,13 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 95px;
+    font-size: 60px;
 }
 
 .hero p{
     font-size: 40px;
     font-style: italic;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .hero img{
@@ -301,7 +301,7 @@
 .shop .see-all{
     margin-top: 55px;
     color: #fff;
-    background: #424242;
+    background: #000000;
     border-radius: 5px;
     padding: 12px 23px;
     float: right;
@@ -361,3 +361,5 @@
 ::-webkit-scrollbar-corner {
     background: #ffffff;            /* Цвет угла */
 }
+
+
