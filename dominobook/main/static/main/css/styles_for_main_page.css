@@ -298,10 +298,17 @@
     width: 250px;
 }
 
+.block1 img{
+    box-shadow: 0 0 0 1px #2d2c2c57;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+}
+
 .shop .see-all{
     margin-top: 55px;
     color: #fff;
-    background: #000000;
+    background: #424242;
     border-radius: 5px;
     padding: 12px 23px;
     float: right;
@@ -318,6 +325,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 50px 0;
+    flex-wrap: wrap;
 
 }
 
@@ -362,4 +370,288 @@
     background: #ffffff;            /* Цвет угла */
 }
 
+.feedback {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 18px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 25% 70px 25%;
+}
 
+.card {
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.card h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 19px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card button {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #3a3a3a;
+}
+
+.footer {
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 150px;
+}
+
+.footer-content {
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Отступы между логотипами */
+}
+
+.social-logos img {
+    width: 40px; /* Размер логотипов */
+    height: 40px;
+    filter: grayscale(100%); /* Чёрно-белые логотипы */
+    transition: filter 0.3s ease;
+}
+
+.social-logos img:hover {
+    filter: none; /* Цветной логотип при наведении */
+}
+
+@media(max-width: 376px){
+    body {
+        width: 375px;
+        overflow-x: hidden;
+    }
+
+    header li a{
+        display: none;
+    }
+
+    header img{
+        width: 10%;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .hero-inf h1{
+        font-size: 27px;
+    }
+
+    .hero-inf p{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+
+    .hero img{
+        padding-bottom: 25px;
+        width: 50%;
+    }
+
+    .hero{
+        margin: 30px 20px 10px 20px;
+        width: 375px;
+        justify-content: start;
+        padding-bottom: 35px;
+
+    }
+
+    .hero .btn{
+        padding: 5px 15px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .why h2{
+        font-size: 40px;
+    }
+
+    .bestseller h2{
+        font-size: 40px;
+    }
+
+    .product-card{
+        width: auto;
+        margin: 0px 7px 19px 20px;
+    }
+
+    .product-image{
+        width: 90%;
+    }
+
+    .product-title{
+        font-size: 14px;
+        height: 28px;
+    }
+
+    .product-description{
+        font-size: 10px;
+        height: 20px;
+    }
+
+    .product-container{
+        align-items: normal;
+        display: block;
+        margin-bottom: 70px;
+
+    }
+
+    .recomendation h2 {
+        font-size: 40px;
+
+    }
+
+    .rec-container{
+        display: block;
+        width: auto;
+    }
+
+    .rec-card{
+        width: auto;
+        margin: 0px 30px 15px 30px;
+    }
+
+    .baze{
+        display: block;
+        height: auto;
+        padding: 50px 0px 60px 0px;
+    }
+
+    .baze h1{
+        font-size: 45px;
+    }
+
+    .shop{
+        height: auto;
+        margin: 30px 15px 10px;
+    }
+
+    .shop .weapon {
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .block {
+        flex: 1 1 calc(48%); /* 48% ширины для 2 карточек в строку */
+        margin: 0px 1px;
+    }
+
+    .shop h2{
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+
+    .shop img{
+        height: 250px;
+        width: 160px;
+
+    }
+
+    .block1 {
+        flex: 1 1 calc(48%); /* 48% ширины для 2 карточек в строку */
+        padding-left: 10px;
+    }
+
+    .shop .weapon span{
+        margin: 7px;
+    }
+
+    .shop .see-all{
+        margin-top: 10px;
+    }
+
+    .kontakt{
+        margin-top: 20px;
+    }
+
+    .feedback{
+        margin: 20px 3%;
+        width:auto;
+        display: block;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-logos {
+        margin-top: 10px;
+    }
+
+}
