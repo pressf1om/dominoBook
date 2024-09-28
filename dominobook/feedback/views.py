@@ -8,9 +8,9 @@ def feedback_view(request):
         form = FeedbackForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'index.html', {'form': form, 'success': True})  # Остаёмся на той же странице
+            return redirect('main:index')
     else:
         form = FeedbackForm()
-    return render(request, 'index.html', {'form': form})
+    return render(request, 'main/index.html', {'form': form})
 
 

@@ -14,7 +14,7 @@
     </div>
     <div class="form-zvonok">
         <div>
-            <form method="POST">
+            <form method="POST" action="{% url 'feedback' %}">
                 <h3> Обратная связь</h3>
                 {% csrf_token %}
                 <div class="form-group">
