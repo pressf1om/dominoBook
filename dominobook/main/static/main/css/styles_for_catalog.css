@@ -13,6 +13,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+
+
 }
 
 .card-container {
@@ -37,10 +39,6 @@ section.card {
     flex-direction: column;
     align-items: center; /* По центру по горизонтали */
 
-}
-
-section.card:hover {
-    transform: scale(1.05);
 }
 
 .card img {
@@ -79,16 +77,76 @@ section.card:hover {
     background-color: #424242;
 }
 
-@media screen and (max-width: 930px) {
 
-    section.card {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        width: 35%;
+
+@media screen and (max-width: 777px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+
+
+    .title {
+
+        margin-bottom: 30px;
     }
 
     .card img {
         max-width: 100%;
     }
+
+    .card h2 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+
 }
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    section.card {
+        width: 45%;
+        margin: 10px auto;
+    }
+
+    .title {
+
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .card h2 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+
+
+}
+
+
+
+
+
+
