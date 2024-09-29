@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Профиль пользователя</h2>
+<p>Имя пользователя: {{ user.username }}</p>
+<p>Email: {{ user.email }}</p>
+
+<h3>Ваши заказы</h3>
+{% if orders %}
+    <ul>
+        {% for order in orders %}
+        <li>
+            <strong>Заказ №{{ order.id }}</strong> от {{ order.created_at|date:"d.m.Y H:i" }} - {{ order.total_price }} ₽
+            <ul>
+                {% for item in order.items.all %} {# проходим по всем товарам в текущем заказе #}
+                <li>
+                    {% if item.book.image %}
+                        <img src="{{ item.book.image.url }}" alt="{{ item.book.title }}" style="width: 100px; height: auto; margin-right: 10px;">
+                    {% else %}
+                        <img src="{% static 'cart/img/default_book.png' %}" alt="Без изображения" style="width: 100px; height: auto; margin-right: 10px;">
+                    {% endif %}
+                    <span>{{ item.book.title }} x {{ item.quantity }} - {{ item.price }} ₽</span>  {# название, количество и цена #}
+                    <span> - Автор: {{ item.book.author }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>У вас пока нет заказов.</p>
+{% endif %}
+{% endblock %}

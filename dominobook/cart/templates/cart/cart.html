@@ -1,8 +1,8 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static 'cart/css/cart' %}">
+<link rel="stylesheet" href="{% static 'cart/css/cart.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -11,7 +11,12 @@
 <ul>
     {% for item in cart.items.all %}
     <li>
-        {{ item.book.title }} ({{ item.quantity }})
+        {% if item.book.image %}
+            <img src="{{ item.book.image.url }}" alt="{{ item.book.title }}" style="width: 100px; height: auto; margin-right: 10px;">
+        {% else %}
+            <img src="{% static 'cart/img/default_book.png' %}" alt="Без изображения" style="width: 100px; height: auto; margin-right: 10px;">
+        {% endif %}
+        {{ item.book.title }} ({{ item.quantity }}) - Автор: {{ item.book.author }}
         <a href="{% url 'cart:remove_from_cart' item.book.id %}">Удалить</a>
     </li>
     {% endfor %}
@@ -21,10 +26,9 @@
 <p>Ваша корзина пуста.</p>
 {% endif %}
 
-<form action="#" method="post">
+<form action="{% url 'cart:pay' %}" method="post">
     {% csrf_token %}
     <button type="submit">Оплатить {{ cart.get_total_price }} ₽</button>
 </form>
 
 {% endblock %}
-
