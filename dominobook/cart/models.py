@@ -6,6 +6,9 @@ class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='cart')
     created_at = models.DateTimeField(auto_now_add=True)
 
+    def get_total_price(self):
+        return sum(item.book.price * item.quantity for item in self.items.all())
+
     def __str__(self):
         return f"Корзина пользователя: {self.user.username}"
 

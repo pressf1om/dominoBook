@@ -20,5 +20,11 @@
 {% else %}
 <p>Ваша корзина пуста.</p>
 {% endif %}
+
+<form action="#" method="post">
+    {% csrf_token %}
+    <button type="submit">Оплатить {{ cart.get_total_price }} ₽</button>
+</form>
+
 {% endblock %}
 
