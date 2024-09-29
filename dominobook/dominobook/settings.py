@@ -111,8 +111,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'UTC'
-
 USE_I18N = True
 
 USE_TZ = True
@@ -132,3 +130,6 @@ LOGIN_REDIRECT_URL = 'main:index'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+TIME_ZONE = 'Europe/Moscow'
+USE_TZ = True
