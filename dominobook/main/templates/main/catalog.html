@@ -7,15 +7,13 @@
 
 {% block content %}
 
+<div class="title"> Каталог </div>
+
 <section class="card-container">
 
     {% for book in books %}
     <section class="card">
-        {% if book.image %}
-            <img src="{{ book.image.url }}" alt="Обложка книги">
-        {% else %}
-            <img src="{% static 'cart/img/default_book.png' %}" alt="Нет изображения">
-        {% endif %}
+        <img src="{{ book.cover_image }}" alt="Обложка книги">
         <h2>{{ book.title }}</h2>
         <p>{{ book.author }}</p>
         <p>{{ book.price }} ₽</p>
