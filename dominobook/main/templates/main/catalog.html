@@ -2,18 +2,20 @@
 {% load static %}
 
 {% block head %}
-    <link rel="stylesheet" href="{% static 'main/css/styles_for_catalog.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/styles_for_catalog.css' %}">
 {% endblock %}
 
 {% block content %}
-
-<div class="title"> Каталог </div>
 
 <section class="card-container">
 
     {% for book in books %}
     <section class="card">
-        <img src="{{ book.cover_image }}" alt="Обложка книги">
+        {% if book.image %}
+        <img src="{{ book.image.url }}" alt="Обложка книги">
+        {% else %}
+        <img src="{% static 'cart/img/default_book.png' %}" alt="Нет изображения">
+        {% endif %}
         <h2>{{ book.title }}</h2>
         <p>{{ book.author }}</p>
         <p>{{ book.price }} ₽</p>
